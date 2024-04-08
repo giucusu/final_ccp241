@@ -1,0 +1,585 @@
+body {
+  background-color: #D6EBD5;
+  color: black;
+  margin: 1%;
+  font-size: 100%;
+  font-family: anaheim, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#milo {
+  display: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Style for the toggle checkbox */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Style for the toggle button */
+.toggle-label {
+  display: inline-block;
+  width: 160px;
+  /* Adjust width according to your preference */
+  height: 34px;
+  position: relative;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+  padding-left: 40px;
+  /* Add padding for label text */
+  line-height: 34px;
+  /* Center label text vertically */
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: left 0.4s;
+}
+
+/* Style for checked toggle button */
+.toggle-checkbox:checked+.toggle-label .toggle-btn {
+  left: calc(100% - 32px);
+  /* Adjust position for checked state */
+}
+
+/* Style for checked background color */
+.toggle-checkbox:checked+.toggle-label {
+  background-color: #007bff;
+}
+
+header {
+  background-color: #D6EBD5;
+  padding: 20px;
+  text-align: center;
+  border: none;
+}
+
+.logo {
+  border: none;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: anaheim, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #D6EBD5;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+h2 {
+  font-size: 1.5em;
+
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+p {
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #D6EBD5;
+  padding: 20px;
+  border-top: 1px solid #4b0082;
+  margin-top: 20px;
+  font-family: anaheim, sans-serif;
+  font-size: 1em;
+  color: #4b0082;
+}
+
+footer a {
+  color: #4F1271;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+body {
+  transition: background-color 0.3s ease;
+  /* Add any other styling for light mode */
+}
+
+
+button.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #D6EBD5;
+  font-family: Arial;
+  border: 2px solid black;
+  display: flex;
+  /* Using flexbox */
+  justify-content: center;
+  /* Center aligning the navbar */
+}
+
+.navbar a {
+  font-size: 1.35em;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.35em;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  justify-content: center;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(225, 203, 252);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  color: #15420b;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #0c3b01;
+}
+
+.active::after {
+  content: "🌟";
+  margin-left: 5px;
+}
+
+.navbar a[href="pets.html"].active::after {
+  content: " 🐾";
+  /* Pawprint emoji for Pets page */
+  margin-left: 5px;
+}
+
+.navbar a[href="travel.html"].active::after {
+  content: " ✈️";
+  /* Plane emoji for Travel page */
+  margin-left: 5px;
+}
+
+.navbar a[href="recipes.html"].active::after {
+  content: " 👩‍🍳";
+  /* Chef emoji for Recipes page */
+  margin-left: 5px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  /* Scale the image to 110% of its original size */
+}
+
+/* for .gif { */
+.gif {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gif {
+    display: none;
+  }
+}
+
+/* skip link */
+.skip-link {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: .15ch;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  visibility: visible;
+  /* Change visibility to visible */
+}
+
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: fixed;
+  /* Change position to fixed */
+  width: auto;
+  outline: none;
+  top: 1rem;
+  /* Adjust top position */
+  left: 1rem;
+  /* Adjust left position */
+  z-index: 10;
+}
+
+.skip-link:focus:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.contentinfo {
+  padding: 100px;
+  text-align: center;
+  border: none;
+}
+
+img {
+  padding: 0px;
+  margin: 5px;
+  border-top-right-radius: 30px;
+  width: 300px;
+  height: auto;
+}
+
+/* Styling for the photo gallery */
+.photo-gallery-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  /* Ensure images snap into view */
+  display: flex;
+  /* or display: grid; for grid layout */
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #fddeff;
+  /* Light purple background */
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery h3 {
+  margin-top: 0;
+  /* Remove top margin of the title */
+}
+
+.photo-gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.03);
+}
+
+
+.photo-gallery-title {
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  /* Reduced padding */
+  background-color: #fddeff;
+  /* Light purple background */
+  max-width: 100%;
+  text-align: center;
+
+}
+.name-photo-section {
+  padding: 30px;
+}
+/* tablet view */
+@media screen and (min-width: 768px) {
+  .photo-gallery img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .name-photo-section img {
+    min-width: 300px;
+    min-height: 300px;
+  }
+
+  .photo-gallery img:hover {
+    transform: scale(2.0);
+  }
+
+  body {
+    font-size: 125%;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .ingredients-and-instructions h3,
+  .likes-section h3 {
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 25%;
+  }
+
+  h3.name-photo-section {
+    word-wrap: break-word;
+  }
+
+  .name-photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #D6EBD5;
+    text-align: center;
+    text-align: justify;
+    max-width: 100%;
+  }
+
+  .name-photo-section::after {
+    content: '';
+    flex-grow: 1;
+  }
+
+  .ingredients-and-instructions {
+    background-color: #e9ffc0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .ingredients-and-instructions h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .ingredients-and-instructions p {
+    margin-bottom: 10px;
+  }
+
+  .likes-section {
+    background-color: #e9ffc0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .likes-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .likes-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .likes-section li {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #bdecb6;
+    font-weight: normal;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+
+  .likes-section li:hover {
+    background-color: #8ad387;
+  }
+}
+
+/*desktop view*/
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 100%;
+  }
+
+  .photo-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #fddeff;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .photo-gallery-container img {
+    width: 300px;
+    height: auto;
+  }
+
+  body {
+    font-size: 125%;
+  }
+
+  img {
+    width: 25%;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  .ingredients-and-instructions {
+    background-color: #e9ffc0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .ingredients-and-instructions h3 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .ingredients-and-instructions p {
+    margin-bottom: 10px;
+  }
+
+  .likes-section {
+    background-color: #e9ffc0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .likes-section h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .likes-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .likes-section li {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #bdecb6;
+    font-weight: normal;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+
+  .likes-section li:hover {
+    background-color: #8ad387;
+  }
+}
